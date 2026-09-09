@@ -2570,14 +2570,15 @@ ul {
 /* ==========================================================================
    RESPONSIVE DESIGN (TABLET & MOBILE)
    ========================================================================== */
+
+/* --- TABLET / SMALL LAPTOPS (max-width: 1024px) --- */
 @media (max-width: 1024px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
+    :root {
+        --container-pad: 20px;
     }
 
     .hero-title {
-        font-size: 3.1rem;
+        font-size: 3rem;
     }
 
     .hero-bg-wrapper {
@@ -2596,9 +2597,22 @@ ul {
         gap: 2rem;
     }
 
+    .philosophy-heading-line {
+        white-space: normal;
+    }
+
+    .botanical-visual {
+        max-width: 100%;
+        height: 180px;
+    }
+
     .trust-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.25rem;
+    }
+
+    .treatments-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .healthspan-container {
@@ -2608,7 +2622,7 @@ ul {
 
     .method-container {
         grid-template-columns: 1fr;
-        gap: 3.5rem;
+        gap: 3rem;
     }
 
     .why-koi-grid {
@@ -2630,16 +2644,28 @@ ul {
     }
 
     .testimonials-stats-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .testimonial-header-col {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .testimonial-header-col .carousel-arrows {
+        margin-top: 0;
     }
 
     .stats-col {
-        grid-column: span 2;
+        grid-column: span 1;
         flex-direction: row;
         border-left: none;
         border-top: 1px solid var(--color-border);
         padding-top: 2rem;
         padding-left: 0;
+        justify-content: space-between;
     }
 
     .journal-grid {
@@ -2661,77 +2687,265 @@ ul {
     }
 }
 
+/* --- MOBILE LANDSCAPE & PHONES (max-width: 768px) --- */
 @media (max-width: 768px) {
+    .site-header {
+        padding: 0.9rem 0;
+    }
+
     .main-nav {
         display: none;
-        /* Can be toggled with mobile menu */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FAF7F2;
+        padding: 1.5rem var(--container-pad);
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        z-index: 1000;
+        transition: var(--transition-smooth);
+    }
+
+    .main-nav.is-open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-nav .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+        width: 100%;
+    }
+
+    .nav-item.dropdown .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        padding: 0.5rem 0 0 1rem;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background: transparent;
     }
 
     .mobile-toggle {
         display: flex;
+        cursor: pointer;
+    }
+
+    .mobile-toggle.is-active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .mobile-toggle.is-active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-toggle.is-active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    #headerBookBtn {
+        height: 38px;
+        padding: 0 1.15rem;
+        font-size: 0.85rem;
     }
 
     .hero-section {
-        padding: 3rem 0 3.5rem;
+        padding: 3rem 0 3.25rem;
         min-height: auto;
+        position: relative;
     }
 
     .hero-bg-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        opacity: 0.18;
+        height: 100%;
+        opacity: 0.85;
+        z-index: 1;
+    }
+
+    .hero-blend-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        filter: brightness(1.03);
     }
 
     .hero-blend-fade {
-        background: linear-gradient(to top, #FAF7F2 15%, rgba(250, 247, 242, 0.9) 70%, rgba(250, 247, 242, 0.6) 100%);
-    }
-
-    .hero-script-overlay {
-        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to top, #FAF7F2 15%, rgba(250, 247, 242, 0.92) 58%, rgba(250, 247, 242, 0.65) 85%, rgba(250, 247, 242, 0.35) 100%);
     }
 
     .hero-title {
         font-size: 2.35rem;
+        line-height: 1.15;
+    }
+
+    .hero-title-line {
+        white-space: normal;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.55;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: stretch;
+        gap: 0.75rem;
     }
 
     .hero-buttons .btn {
         width: 100%;
     }
 
+    .trust-strip {
+        padding: 1.25rem 0;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
     .section-heading {
         font-size: 2.15rem;
     }
 
-    .treatments-grid {
-        grid-template-columns: 1fr;
+    .section-header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
     }
 
-    .treatment-card:nth-child(n) {
-        grid-column: span 1;
+    .treatments-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .treatment-card {
+        flex-direction: column;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    .treatment-card-img {
+        width: 100%;
+        height: 180px;
+        order: -1;
+    }
+
+    .treatment-card-content {
+        padding: 1.4rem;
+    }
+
+    .healthspan-banner {
+        padding: 3.5rem 0 4rem;
+        position: relative;
+    }
+
+    .healthspan-bg-img {
+        opacity: 0.72;
+        filter: brightness(0.95);
+    }
+
+    .healthspan-bg-overlay {
+        background: linear-gradient(to top, rgba(14, 39, 30, 0.94) 0%, rgba(14, 39, 30, 0.78) 60%, rgba(14, 39, 30, 0.55) 100%);
+    }
+
+    .healthspan-title {
+        font-size: 2.35rem;
+    }
+
+    .healthspan-title-line {
+        white-space: normal;
+    }
+
+    .healthspan-pillars-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem 0.5rem;
+        justify-items: center;
+    }
+
+    .pillar-item {
+        width: 100%;
+    }
+
+    .method-timeline {
+        padding-top: 0;
+    }
+
+    .timeline-line {
+        display: none;
     }
 
     .method-steps-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .method-step-item {
+        padding-top: 0;
+        padding-left: 24px;
+        position: relative;
+    }
+
+    .step-point {
+        top: 4px;
+        left: 0;
+    }
+
+    .step-point::after {
+        top: 11px;
+        left: 3px;
+        height: calc(100% + 1rem);
+    }
+
+    .location-photo-card {
+        height: 220px;
     }
 
     .location-gallery-col {
         grid-template-columns: 1fr;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .gallery-tall-card {
+        height: 220px;
+    }
+
+    .gallery-small-card {
+        height: 160px;
     }
 
     .providers-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .symptoms-goals-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
     }
 
     .symptom-result-panel {
         grid-template-columns: 1fr;
+        padding: 1.5rem;
     }
 
     .testimonial-header-col {
@@ -2740,41 +2954,69 @@ ul {
     }
 
     .testimonial-header-col .carousel-arrows {
-        margin-top: 1.5rem;
+        margin-top: 1.25rem;
     }
 
     .testimonial-card {
-        flex: 0 0 85%;
-    }
-
-    .testimonials-stats-grid {
-        grid-template-columns: 1fr;
+        flex: 0 0 88%;
+        min-width: 240px;
+        padding: 1.75rem 1.4rem;
     }
 
     .stats-col {
         grid-column: span 1;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1.25rem;
         border-top: 1px solid #E2D9CD;
-        padding-top: 1.75rem;
+        border-left: none;
+        padding-top: 1.5rem;
+        padding-left: 0;
     }
 
     .journal-grid {
         grid-template-columns: 1fr;
     }
 
-    .cta-container {
-        padding: 3.5rem var(--container-pad);
-        min-height: auto;
+    .cta-section {
+        position: relative;
+        background-color: #FAF7F2;
+        overflow: hidden;
     }
 
     .cta-bg-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         width: 100%;
-        opacity: 0.22;
+        height: 100%;
+        opacity: 0.85;
+        z-index: 1;
+    }
+
+    .cta-bg-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center right;
+        filter: brightness(1.02) contrast(1.05);
     }
 
     .cta-gradient-overlay {
-        background: linear-gradient(to top, #FAF7F2 20%, rgba(250, 247, 242, 0.85) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to top, #FAF7F2 15%, rgba(250, 247, 242, 0.92) 58%, rgba(250, 247, 242, 0.65) 85%, rgba(250, 247, 242, 0.35) 100%);
+    }
+
+    .cta-container {
+        position: relative;
+        z-index: 2;
+        padding: 3.5rem var(--container-pad);
+        min-height: auto;
     }
 
     .script-cta-banner {
@@ -2782,7 +3024,7 @@ ul {
     }
 
     .cta-heading {
-        font-size: 2.35rem;
+        font-size: 2.25rem;
     }
 
     .cta-buttons {
@@ -2797,12 +3039,18 @@ ul {
 
     .footer-top-grid {
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 2.25rem;
     }
 
     .footer-creed-col {
         margin-left: 0;
         margin-right: 0;
+        width: 100%;
+    }
+
+    .footer-creed-text {
+        font-size: 1.4rem;
+        white-space: normal;
     }
 
     .modal-form .form-row {
@@ -2813,5 +3061,32 @@ ul {
         flex-direction: column;
         gap: 0.75rem;
         text-align: center;
+    }
+}
+
+/* --- SMALL COMPACT PHONES (max-width: 480px) --- */
+@media (max-width: 480px) {
+    :root {
+        --container-pad: 16px;
+    }
+
+    .hero-title {
+        font-size: 2.1rem;
+    }
+
+    .section-heading {
+        font-size: 1.95rem;
+    }
+
+    .pillar-item {
+        flex: 0 0 calc(50% - 0.5rem);
+    }
+
+    .header-actions {
+        gap: 0.75rem;
+    }
+
+    .location-badge {
+        font-size: 0.8rem;
     }
 }
