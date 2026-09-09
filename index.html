@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOI Wellbeing | Regenerative, Functional & Integrative Medicine</title>
+    <meta name="description"
+        content="At KOI Wellbeing, we combine comprehensive testing, functional medicine, and individualized treatment planning to uncover root causes and optimize vitality.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-logo">
+                <span class="logo-title">KOI</span>
+                <span class="logo-sub">WELLBEING</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="#treatments" class="nav-link">Treatments <i data-lucide="chevron-down"
+                                class="nav-icon"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#treatments" data-treatment="hormone">Hormone Therapy (BHRT & TRT)</a>
+                            <a href="#treatments" data-treatment="weight">Medical Weight Loss (GLP-1)</a>
+                            <a href="#treatments" data-treatment="iv">IV Nutrient Therapy</a>
+                            <a href="#treatments" data-treatment="aesthetic">Aesthetic Medicine</a>
+                            <a href="#treatments" data-treatment="gut">Gut Health & Microbiome</a>
+                            <a href="#treatments" data-treatment="naturopathic">Naturopathic Medicine</a>
+                            <a href="#treatments" data-treatment="longevity">Regenerative & Longevity</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#approach" class="nav-link">Our Approach</a></li>
+                    <li class="nav-item"><a href="#why-koi" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#providers" class="nav-link">Providers</a></li>
+                    <li class="nav-item"><a href="#location" class="nav-link">La Mesa</a></li>
+                    <li class="nav-item"><a href="#journal" class="nav-link">Resources</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <button class="btn btn-primary open-modal-btn" id="headerBookBtn">
+                    Book Consultation <i data-lucide="arrow-right" class="btn-icon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-wrapper">
+            <div class="hero-bg-image-container">
+                <img src="hero-consultation.jpg" alt="Doctor consulting with smiling patient at KOI Wellbeing"
+                    class="hero-blend-img">
+                <div class="hero-blend-fade"></div>
+            </div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="tag-pill">REGENERATIVE • FUNCTIONAL • INTEGRATIVE MEDICINE</div>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Your health is personal.</span>
+                    <span class="hero-title-line">Your medicine should be too.</span>
+                </h1>
+                <p class="hero-description">
+                    Advanced functional medicine designed to uncover root causes, optimize performance and help you feel
+                    like yourself again.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary open-modal-btn">
+                        Book Consultation <i data-lucide="arrow-right" class="btn-icon"></i>
+                    </button>
+                    <a href="#treatments" class="btn btn-outline">Explore Treatments</a>
+                </div>
+                <div class="location-badge">
+                    <i data-lucide="map-pin" class="badge-icon"></i>
+                    <span>Serving the La Mesa community with personalized, root-cause care.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST STRIP / PILLARS -->
+    <section class="trust-strip">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon-box">
+                        <i data-lucide="sprout"></i>
+                    </div>
+                    <span>Serving San Diego since 2015</span>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon-box">
+                        <i data-lucide="flask-conical"></i>
+                    </div>
+                    <span>Regenerative Medicine</span>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon-box">
+                        <i data-lucide="microscope"></i>
+                    </div>
+                    <span>Advanced Diagnostic Testing</span>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon-box">
+                        <i data-lucide="heart-handshake"></i>
+                    </div>
+                    <span>Personalized Treatment Plans</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY / LOOK DEEPER SECTION -->
+    <section class="philosophy-section" id="approach">
+        <div class="container philosophy-container">
+            <!-- Left clinic reception image -->
+            <div class="philosophy-image-col">
+                <div class="philosophy-main-image">
+                    <img src="clinic-reception.jpg" alt="KOI Wellbeing welcoming clinic reception"
+                        class="clinic-interior-img">
+                </div>
+            </div>
+
+            <!-- Center text content -->
+            <div class="philosophy-content-col">
+                <div class="philosophy-tag">A DIFFERENT WAY TO THINK ABOUT HEALTH</div>
+                <h2 class="philosophy-heading">
+                    <span class="philosophy-heading-line">We don't just treat symptoms.</span>
+                    <span class="philosophy-heading-line">We look deeper.</span>
+                </h2>
+                <p class="philosophy-text">
+                    At KOI Wellbeing, we combine comprehensive testing, functional medicine and individualized treatment
+                    planning to understand the why behind your health concerns — so we can help you achieve lasting,
+                    meaningful results.
+                </p>
+                <a href="#approach" class="philosophy-cta-link">
+                    Our Approach <i data-lucide="arrow-right" class="cta-arrow-icon"></i>
+                </a>
+            </div>
+
+            <!-- Right botanical quote card -->
+            <div class="philosophy-quote-col">
+                <div class="botanical-visual">
+                    <img src="botanical-leaves.jpg" alt="Botanical olive branch detail" class="botanical-img">
+                </div>
+                <div class="botanical-quote-wrapper">
+                    <div class="quote-rule"></div>
+                    <blockquote class="botanical-quote">
+                        “Health is not a destination, it's a deeper connection with yourself.”
+                    </blockquote>
+                    <div class="quote-rule"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TREATMENTS SECTION -->
+    <section class="treatments-section" id="treatments">
+        <div class="container">
+            <div class="section-header-flex">
+                <div>
+                    <div class="section-tag">OUR TREATMENTS</div>
+                    <h2 class="section-heading">Care designed around the whole you.</h2>
+                    <p class="section-subtext">
+                        Our treatments can work independently or as part of an individualized wellness strategy,
+                        combining science, nature and personalized care.
+                    </p>
+                </div>
+                <div class="header-nav-controls">
+                    <a href="#treatments-catalog" class="view-all-link">View All Treatments <i
+                            data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Treatments Grid / Carousel -->
+            <div class="treatments-grid" id="treatmentsGrid">
+                <!-- 01 Hormone Therapy -->
+                <div class="treatment-card" data-category="hormone">
+                    <div class="treatment-card-content">
+                        <span class="treatment-num">01</span>
+                        <h3 class="treatment-title">Hormone Therapy</h3>
+                        <p class="treatment-desc">Bioidentical hormone balancing, BHRT and TRT.</p>
+                        <a href="#consultation-modal" class="treatment-link open-modal-btn"
+                            data-preset="Hormone Therapy">Explore <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="treatment-card-img">
+                        <img src="treatment-hormone.jpg" alt="Bioidentical Hormone Therapy - Serene relaxed woman">
+                    </div>
+                </div>
+
+                <!-- 02 Medical Weight Loss -->
+                <div class="treatment-card" data-category="weight">
+                    <div class="treatment-card-content">
+                        <span class="treatment-num">02</span>
+                        <h3 class="treatment-title">Medical Weight Loss</h3>
+                        <p class="treatment-desc">Evidence-led metabolic programs including GLP-1 and peptide-based
+                            care.</p>
+                        <a href="#consultation-modal" class="treatment-link open-modal-btn"
+                            data-preset="Medical Weight Loss">Explore <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="treatment-card-img">
+                        <img src="treatment-weight.jpg" alt="Medical Weight Loss - Active lean metabolic fitness">
+                    </div>
+                </div>
+
+                <!-- 03 IV Therapy -->
+                <div class="treatment-card" data-category="iv">
+                    <div class="treatment-card-content">
+                        <span class="treatment-num">03</span>
+                        <h3 class="treatment-title">IV Therapy</h3>
+                        <p class="treatment-desc">Personalized IV formulations including wellness-focused nutrient
+                            therapies.</p>
+                        <a href="#consultation-modal" class="treatment-link open-modal-btn"
+                            data-preset="IV Therapy">Explore <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="treatment-card-img">
+                        <img src="treatment-iv.jpg" alt="Clinical IV Nutrient Therapy infusion">
+                    </div>
+                </div>
+
+                <!-- 04 Aesthetic Medicine -->
+                <div class="treatment-card" data-category="aesthetic">
+                    <div class="treatment-card-content">
+                        <span class="treatment-num">04</span>
+                        <h3 class="treatment-title">Aesthetic Medicine</h3>
+                        <p class="treatment-desc">Modern aesthetic treatments designed to complement overall wellbeing.
+                        </p>
+                        <a href="#consultation-modal" class="treatment-link open-modal-btn"
+                            data-preset="Aesthetic Medicine">Explore <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="treatment-card-img">
+                        <img src="treatment-aesthetic.jpg" alt="Aesthetic Medicine and gentle facial wellness">
+                    </div>
+                </div>
+
+                <!-- 05 Gut Health -->
+                <div class="treatment-card" data-category="gut">
+                    <div class="treatment-card-content">
+                        <span class="treatment-num">05</span>
+                        <h3 class="treatment-title">Gut Health</h3>
+                        <p class="treatment-desc">Functional testing and personalized strategies addressing digestive
+                            health.</p>
+                        <a href="#consultation-modal" class="treatment-link open-modal-btn"
+                            data-preset="Gut Health">Explore <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="treatment-card-img">
+                        <img src="treatment-gut.jpg" alt="Gut Health and functional nutrition bowl">
+                    </div>
+                </div>
+
+                <!-- 07 Regenerative Medicine & Longevity -->
+                <div class="treatment-card" data-category="longevity">
+                    <div class="treatment-card-content">
+                        <span class="treatment-num">06</span>
+                        <h3 class="treatment-title">Regenerative Medicine &amp; Longevity</h3>
+                        <p class="treatment-desc">Regenerative therapies, peptides and longevity-focused care.</p>
+                        <a href="#consultation-modal" class="treatment-link open-modal-btn"
+                            data-preset="Regenerative & Longevity">Explore <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="treatment-card-img">
+                        <img src="treatment-longevity.jpg" alt="Regenerative Medicine and Longevity outdoor athlete">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HEALTHSPAN BANNER (DARK FOREST GREEN WITH BOTANICAL BACKGROUND) -->
+    <section class="healthspan-banner" id="longevity-banner">
+        <div class="healthspan-bg-layer">
+            <img src="healthspan-bg.jpg" alt="Dark moody tropical botanical foliage background"
+                class="healthspan-bg-img">
+            <div class="healthspan-bg-overlay"></div>
+        </div>
+
+        <div class="container healthspan-container">
+            <div class="healthspan-text-content">
+                <h2 class="healthspan-title">
+                    <span class="healthspan-title-line">Healthspan,</span>
+                    <span class="healthspan-title-line">not just lifespan.</span>
+                </h2>
+                <p class="healthspan-desc">
+                    Our longevity-focused care helps you stay vibrant, resilient and active — with advanced diagnostics,
+                    hormone optimization, metabolic health, recovery and regenerative therapies.
+                </p>
+                <a href="#consultation-modal" class="btn btn-emerald open-modal-btn" data-preset="Longevity Care">
+                    Explore Longevity Care <i data-lucide="arrow-right" class="btn-icon"></i>
+                </a>
+            </div>
+
+            <div class="healthspan-pillars-grid">
+                <div class="pillar-item">
+                    <div class="pillar-icon-circle">
+                        <i data-lucide="activity"></i>
+                    </div>
+                    <span class="pillar-label">Diagnostics</span>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-icon-circle">
+                        <i data-lucide="dna"></i>
+                    </div>
+                    <span class="pillar-label">Hormones</span>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-icon-circle">
+                        <i data-lucide="heart-pulse"></i>
+                    </div>
+                    <span class="pillar-label">Metabolic Health</span>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-icon-circle">
+                        <i data-lucide="leaf"></i>
+                    </div>
+                    <span class="pillar-label">Recovery</span>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-icon-circle">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <span class="pillar-label">Regeneration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE KOI METHOD (PROCESS) -->
+    <section class="method-section" id="method">
+        <div class="container method-container">
+            <div class="method-left-col">
+                <div class="section-tag">THE KOI METHOD</div>
+                <h2 class="method-heading">Better answers start with better questions.</h2>
+
+                <!-- Horizontal Stepper / Timeline -->
+                <div class="method-timeline">
+                    <div class="timeline-line"></div>
+                    <div class="method-steps-grid">
+                        <div class="method-step-item">
+                            <div class="step-point"></div>
+                            <div class="step-header">
+                                <span class="step-num">01</span>
+                                <h3 class="step-title">TEST</h3>
+                            </div>
+                            <p class="step-desc">Use comprehensive lab testing to understand what is happening beneath
+                                the surface.</p>
+                        </div>
+
+                        <div class="method-step-item">
+                            <div class="step-point"></div>
+                            <div class="step-header">
+                                <span class="step-num">02</span>
+                                <h3 class="step-title">UNDERSTAND</h3>
+                            </div>
+                            <p class="step-desc">Review results alongside symptoms, lifestyle and individual goals.</p>
+                        </div>
+
+                        <div class="method-step-item">
+                            <div class="step-point"></div>
+                            <div class="step-header">
+                                <span class="step-num">03</span>
+                                <h3 class="step-title">PLAN TOGETHER</h3>
+                            </div>
+                            <p class="step-desc">Build an individualized care strategy collaboratively.</p>
+                        </div>
+
+                        <div class="method-step-item">
+                            <div class="step-point"></div>
+                            <div class="step-header">
+                                <span class="step-num">04</span>
+                                <h3 class="step-title">OPTIMIZE</h3>
+                            </div>
+                            <p class="step-desc">Track progress and refine treatment over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right stepping stone image column -->
+            <div class="method-right-col">
+                <div class="method-photo-box">
+                    <img src="method-stepping-stones.jpg" alt="Natural stepping stones across calm water stream"
+                        class="method-photo">
+                </div>
+                <p class="method-photo-caption">Personalized medicine designed around your biology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE KOI / MEDICINE BUILT AROUND YOU -->
+    <section class="why-koi-section" id="why-koi">
+        <div class="container why-koi-grid">
+            <!-- Left Info -->
+            <div class="why-koi-left">
+                <div class="section-tag">WHY CHOOSE KOI</div>
+                <h2 class="why-koi-heading">Medicine built<br>around you.</h2>
+                <p class="why-koi-text">
+                    We go beyond symptom management to understand your unique biology, lifestyle and goals — creating a
+                    long-term partnership for better health.
+                </p>
+                <button class="btn btn-primary open-modal-btn">
+                    Learn More About KOI <i data-lucide="arrow-right" class="btn-icon"></i>
+                </button>
+            </div>
+
+            <!-- Middle Image with handwriting and soft fade -->
+            <div class="why-koi-center">
+                <div class="why-koi-photo-wrapper">
+                    <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=1000&q=85"
+                        alt="Woman celebrating health and vitality with open arms overlooking nature"
+                        class="why-koi-img">
+                    <div class="why-koi-fade-overlay"></div>
+                    <div class="script-overlay script-why-koi">
+                        More energy.<br>A brighter tomorrow
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Key Benefits List -->
+            <div class="why-koi-right">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i data-lucide="sprout"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Root-Cause Approach</h4>
+                        <p>Go beyond symptom management.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i data-lucide="microscope"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Advanced Diagnostics</h4>
+                        <p>Use deeper health data to understand individual biology.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i data-lucide="clipboard-check"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Personalized Plans</h4>
+                        <p>Avoid one-size-fits-all protocols.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i data-lucide="flower-2"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Integrative Expertise</h4>
+                        <p>Bring functional, naturopathic and regenerative disciplines together.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i data-lucide="heart-handshake"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Long-Term Partnership</h4>
+                        <p>Create an ongoing relationship centered around your goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LA MESA LOCATION SECTION -->
+    <section class="location-section" id="location">
+        <div class="container location-container">
+            <!-- Left Large Lounge Photo -->
+            <div class="location-lounge-col">
+                <div class="location-photo-card">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85"
+                        alt="Warm welcoming clinic waiting lounge at KOI La Mesa with natural light and botanicals"
+                        class="location-lounge-img">
+                </div>
+            </div>
+
+            <!-- Middle Content -->
+            <div class="location-content-col">
+                <div class="section-tag">OUR LA MESA LOCATION</div>
+                <h2 class="location-heading">Wellbeing starts the<br>moment you walk in.</h2>
+                <p class="location-desc">
+                    Our La Mesa clinic offers a warm, welcoming environment designed for your comfort and care.
+                    Experience a space where modern medicine meets natural healing.
+                </p>
+                <a href="#location-details" class="btn btn-primary location-btn">
+                    View La Mesa Location <i data-lucide="arrow-right" class="btn-icon"></i>
+                </a>
+            </div>
+
+            <!-- Right Gallery: Recliner Chair + Corner Photo + Handwriting -->
+            <div class="location-gallery-col">
+                <div class="gallery-tall-card">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=85"
+                        alt="Serene treatment suite with comfortable white medical recliner chair and botanical plants"
+                        class="gallery-tall-img">
+                </div>
+                <div class="gallery-sub-col">
+                    <div class="gallery-small-card">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=85"
+                            alt="Minimalist aesthetic clinic interior with soothing natural light"
+                            class="gallery-small-img">
+                    </div>
+                    <div class="script-location">
+                        Calm.<br>Modern.<br>Welcoming.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROVIDERS SECTION -->
+    <section class="providers-section" id="providers">
+        <div class="container">
+            <div class="section-header-flex">
+                <div>
+                    <div class="section-tag">OUR PROVIDERS</div>
+                    <h2 class="providers-heading">Expert care. Human connection.</h2>
+                </div>
+                <div class="header-nav-controls">
+                    <a href="#all-providers" class="view-all-link">View All Providers <i
+                            data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Provider Cards Grid -->
+            <div class="providers-grid">
+                <!-- Provider 1 -->
+                <div class="provider-card">
+                    <div class="provider-img-box">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=85"
+                            alt="Dr. Sarah Mitchell, ND - Founder">
+                    </div>
+                    <div class="provider-info">
+                        <h3 class="provider-name">Dr. Sarah Mitchell</h3>
+                        <p class="provider-title">ND, Founder</p>
+                    </div>
+                    <button class="provider-action-btn" aria-label="View Dr. Sarah Mitchell profile">
+                        <i data-lucide="arrow-up-right"></i>
+                    </button>
+                </div>
+
+                <!-- Provider 2 -->
+                <div class="provider-card">
+                    <div class="provider-img-box">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=85"
+                            alt="Dr. James Carter, MD - Integrative Medicine">
+                    </div>
+                    <div class="provider-info">
+                        <h3 class="provider-name">Dr. James Carter</h3>
+                        <p class="provider-title">MD, Integrative Medicine</p>
+                    </div>
+                    <button class="provider-action-btn" aria-label="View Dr. James Carter profile">
+                        <i data-lucide="arrow-up-right"></i>
+                    </button>
+                </div>
+
+                <!-- Provider 3 -->
+                <div class="provider-card">
+                    <div class="provider-img-box">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=85"
+                            alt="Emily Rodriguez, NP - Hormone Therapy">
+                    </div>
+                    <div class="provider-info">
+                        <h3 class="provider-name">Emily Rodriguez</h3>
+                        <p class="provider-title">NP, Hormone Therapy</p>
+                    </div>
+                    <button class="provider-action-btn" aria-label="View Emily Rodriguez profile">
+                        <i data-lucide="arrow-up-right"></i>
+                    </button>
+                </div>
+
+                <!-- Provider 4 -->
+                <div class="provider-card">
+                    <div class="provider-img-box">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=85"
+                            alt="Michael Tran, PA-C - Aesthetic Medicine">
+                    </div>
+                    <div class="provider-info">
+                        <h3 class="provider-name">Michael Tran</h3>
+                        <p class="provider-title">PA-C, Aesthetic Medicine</p>
+                    </div>
+                    <button class="provider-action-btn" aria-label="View Michael Tran profile">
+                        <i data-lucide="arrow-up-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE "WHAT BRINGS YOU HERE?" FILTER SECTION -->
+    <section class="symptoms-finder-section" id="symptoms">
+        <div class="container symptoms-container">
+            <div class="symptoms-header">
+                <h3 class="symptoms-title">What brings you here?</h3>
+            </div>
+
+            <!-- Goal selector pills -->
+            <div class="symptoms-goals-grid">
+                <button class="goal-pill active" data-goal="energy">
+                    <div class="goal-icon-wrap"><i data-lucide="zap"></i></div>
+                    <span class="goal-label">Low Energy</span>
+                </button>
+
+                <button class="goal-pill" data-goal="hormone">
+                    <div class="goal-icon-wrap"><i data-lucide="scale"></i></div>
+                    <span class="goal-label">Hormone Changes</span>
+                </button>
+
+                <button class="goal-pill" data-goal="metabolism">
+                    <div class="goal-icon-wrap"><i data-lucide="utensils"></i></div>
+                    <span class="goal-label">Weight & Metabolism</span>
+                </button>
+
+                <button class="goal-pill" data-goal="digestive">
+                    <div class="goal-icon-wrap"><i data-lucide="rotate-ccw"></i></div>
+                    <span class="goal-label">Digestive Issues</span>
+                </button>
+
+                <button class="goal-pill" data-goal="aging">
+                    <div class="goal-icon-wrap"><i data-lucide="hourglass"></i></div>
+                    <span class="goal-label">Healthy Aging</span>
+                </button>
+
+                <button class="goal-pill" data-goal="performance">
+                    <div class="goal-icon-wrap"><i data-lucide="activity"></i></div>
+                    <span class="goal-label">Recovery & Performance</span>
+                </button>
+
+                <button class="goal-pill" data-goal="skin">
+                    <div class="goal-icon-wrap"><i data-lucide="sparkles"></i></div>
+                    <span class="goal-label">Skin & Aesthetic Goals</span>
+                </button>
+            </div>
+
+            <!-- Dynamic Interactive Result Drawer -->
+            <div class="symptom-result-panel" id="symptomResult">
+                <div class="result-left">
+                    <span class="result-tag" id="resultCategory">RECOMMENDED PROTOCOL</span>
+                    <h4 class="result-title" id="resultTitle">Comprehensive Energy & Mitochondrial Reset</h4>
+                    <p class="result-description" id="resultDesc">
+                        Persistent fatigue is often linked to underlying adrenal strain, thyroid conversion imbalances,
+                        micronutrient deficiencies, or mitochondrial slowdown. We utilize advanced testing (organic
+                        acids, complete hormone panels, ferritin) to identify the exact metabolic bottlenecks.
+                    </p>
+                    <div class="result-badges" id="resultBadges">
+                        <span class="res-badge"><i data-lucide="check"></i> IV Nutrient & NAD+ Therapy</span>
+                        <span class="res-badge"><i data-lucide="check"></i> Comprehensive Thyroid & Adrenal Panel</span>
+                        <span class="res-badge"><i data-lucide="check"></i> Targeted Peptide Optimization</span>
+                    </div>
+                </div>
+                <div class="result-right">
+                    <button class="btn btn-primary open-modal-btn" id="resultBookBtn">
+                        Consult on This Goal <i data-lucide="arrow-right" class="btn-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS & TRUST STATS SECTION -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="testimonials-stats-grid">
+                <!-- Left: Testimonials Title & Controls -->
+                <div class="testimonial-header-col">
+                    <h2 class="section-heading">Real people. Better conversations about health.</h2>
+                    <div class="carousel-arrows">
+                        <button class="arrow-btn prev-btn" id="testiPrev" aria-label="Previous review"><i
+                                data-lucide="arrow-left"></i></button>
+                        <button class="arrow-btn next-btn" id="testiNext" aria-label="Next review"><i
+                                data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Center: Testimonials Carousel / Slider -->
+                <div class="testimonials-carousel-wrapper">
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        <!-- Card 1 -->
+                        <div class="testimonial-card">
+                            <div class="quote-mark">“</div>
+                            <p class="quote-text">
+                                KOI has completely changed the way I think about my health. The team takes the time to
+                                listen and create a plan that actually works for me.
+                            </p>
+                            <div class="quote-author">
+                                <span class="author-name">Rebecca</span>, <span class="author-loc">La Mesa</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="testimonial-card">
+                            <div class="quote-mark">“</div>
+                            <p class="quote-text">
+                                I finally feel like myself again. The care here is thoughtful, personalized and truly
+                                different from anything I've experienced.
+                            </p>
+                            <div class="quote-author">
+                                <span class="author-name">Robert</span>, <span class="author-loc">La Mesa</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="testimonial-card">
+                            <div class="quote-mark">“</div>
+                            <p class="quote-text">
+                                The thoroughness of testing and personal attention exceeded all my expectations. My
+                                energy, sleep, and focus are completely restored.
+                            </p>
+                            <div class="quote-author">
+                                <span class="author-name">Elena</span>, <span class="author-loc">San Diego</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="testimonial-card">
+                            <div class="quote-mark">“</div>
+                            <p class="quote-text">
+                                Functional medicine at KOI identified what standard checkups missed for years. Truly
+                                life-changing, comprehensive care.
+                            </p>
+                            <div class="quote-author">
+                                <span class="author-name">David</span>, <span class="author-loc">La Jolla</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="testimonial-card">
+                            <div class="quote-mark">“</div>
+                            <p class="quote-text">
+                                The providers here treat you like a whole person. They look at root causes instead of
+                                quick fixes. I couldn't recommend them higher.
+                            </p>
+                            <div class="quote-author">
+                                <span class="author-name">Marcus</span>, <span class="author-loc">Del Mar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Stats Bar -->
+                <div class="stats-col">
+                    <div class="stat-item">
+                        <span class="stat-sup">Since</span>
+                        <div class="stat-number">2015</div>
+                        <div class="stat-label">Integrative care</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">San Diego area locations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15 min</div>
+                        <div class="stat-label">Initial consultation option</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOURNAL / ARTICLES SECTION -->
+    <section class="journal-section" id="journal">
+        <div class="container">
+            <div class="section-header-flex">
+                <div>
+                    <div class="section-tag">FROM THE JOURNAL</div>
+                    <h2 class="section-heading">Understand your health.</h2>
+                </div>
+                <div>
+                    <a href="#all-articles" class="view-all-link">View All Articles <i
+                            data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Articles Grid -->
+            <div class="journal-grid">
+                <!-- Article 1 -->
+                <article class="journal-card">
+                    <div class="journal-img-box">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80"
+                            alt="Woman meditating in natural morning light">
+                    </div>
+                    <div class="journal-body">
+                        <span class="journal-tag">Hormone Health</span>
+                        <h3 class="journal-title">The subtle signs of hormone imbalance (and what to do about it)</h3>
+                        <a href="#article-1" class="read-more-link">Read More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="journal-card">
+                    <div class="journal-img-box">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
+                            alt="Healthy balanced Mediterranean metabolic foods">
+                    </div>
+                    <div class="journal-body">
+                        <span class="journal-tag">Metabolic Health</span>
+                        <h3 class="journal-title">Beyond the scale: a smarter approach to weight loss</h3>
+                        <a href="#article-2" class="read-more-link">Read More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="journal-card">
+                    <div class="journal-img-box">
+                        <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=600&q=80"
+                            alt="Active runner on a coastal trail representing longevity">
+                    </div>
+                    <div class="journal-body">
+                        <span class="journal-tag">Longevity</span>
+                        <h3 class="journal-title">Simple daily habits for a longer, healthier life</h3>
+                        <a href="#article-3" class="read-more-link">Read More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CALL TO ACTION SECTION -->
+    <section class="cta-section" id="cta">
+        <div class="cta-bg-wrapper">
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1600&q=85"
+                alt="Woman with wavy hair in warm knit sweater overlooking sunlit rolling hills at sunrise"
+                class="cta-bg-img">
+            <div class="cta-gradient-overlay"></div>
+        </div>
+        <div class="container cta-container">
+            <div class="cta-content-col">
+                <div class="section-tag">YOUR HEALTH, YOUR NEXT CHAPTER</div>
+                <h2 class="cta-heading">Start with a conversation.</h2>
+                <p class="cta-desc">
+                    Tell us what you're experiencing, what you want to improve<br>and where you'd like your health to go
+                    next.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-cta-primary open-modal-btn">
+                        Book Consultation <i data-lucide="arrow-right" class="btn-icon"></i>
+                    </button>
+                    <a href="#location" class="btn btn-cta-secondary">
+                        Contact KOI La Mesa <i data-lucide="arrow-right" class="btn-icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cursive Script in transition area -->
+            <div class="script-cta-banner">
+                A healthier<br>tomorrow<br>starts today
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top-grid">
+                <!-- Brand Col -->
+                <div class="footer-brand-col">
+                    <a href="#" class="footer-logo">
+                        <span class="footer-logo-title">KOI</span>
+                        <span class="footer-logo-sub">WELLBEING</span>
+                    </a>
+                </div>
+
+                <!-- Treatments Nav Col -->
+                <div class="footer-nav-col">
+                    <h4 class="footer-col-title">Treatments</h4>
+                    <ul class="footer-links">
+                        <li><a href="#treatments">Hormone Therapy</a></li>
+                        <li><a href="#treatments">Weight Loss</a></li>
+                        <li><a href="#treatments">IV Therapy</a></li>
+                        <li><a href="#treatments">Gut Health</a></li>
+                        <li><a href="#treatments">Naturopathic Medicine</a></li>
+                        <li><a href="#treatments">Regenerative Medicine</a></li>
+                        <li><a href="#treatments">Aesthetic Medicine</a></li>
+                    </ul>
+                </div>
+
+                <!-- Clinic Nav Col -->
+                <div class="footer-nav-col">
+                    <h4 class="footer-col-title">Clinic</h4>
+                    <ul class="footer-links">
+                        <li><a href="#why-koi">About</a></li>
+                        <li><a href="#providers">Providers</a></li>
+                        <li><a href="#location">La Mesa</a></li>
+                        <li><a href="#cta">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Nav Col -->
+                <div class="footer-nav-col">
+                    <h4 class="footer-col-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#journal">Journal</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Creed Col (Botanical + Creed) -->
+                <div class="footer-creed-col">
+                    <div class="footer-botanical-art">
+                        <svg width="44" height="105" viewBox="0 0 50 110" fill="none" stroke="currentColor"
+                            stroke-width="1.2" class="footer-botanical-svg">
+                            <path d="M25 105 C25 80 23 45 28 8" stroke-linecap="round" />
+                            <path d="M25 86 C35 82 43 75 45 66 C35 68 28 75 25 86 Z" />
+                            <path d="M25 72 C15 67 7 60 5 51 C15 53 22 61 25 72 Z" />
+                            <path d="M26 54 C36 49 44 41 46 32 C36 35 29 43 26 54 Z" />
+                            <path d="M26 40 C16 35 9 27 7 18 C17 21 23 29 26 40 Z" />
+                            <path d="M27 24 C36 18 42 11 43 2 C35 6 29 14 27 24 Z" />
+                        </svg>
+                    </div>
+                    <div class="footer-creed-text">
+                        Grounded in science.<br>Based in nature.
+                    </div>
+                </div>
+
+                <!-- Social Icons Col -->
+                <div class="footer-social-col">
+                    <div class="footer-socials">
+                        <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><i
+                                data-lucide="instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><i
+                                data-lucide="facebook"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i
+                                data-lucide="linkedin"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube"><i
+                                data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Strip -->
+            <div class="footer-bottom-bar">
+                <p class="copyright">© 2024 KOI Wellbeing. All rights reserved.</p>
+                <p class="location-tag">La Mesa, California</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE BOOKING / CONSULTATION MODAL -->
+    <div class="modal-overlay" id="consultationModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">START YOUR JOURNEY</span>
+                <h3 class="modal-title">Book a Personalized Consultation</h3>
+                <p class="modal-sub">Meet with our integrative health experts to map out your root-cause care plan.</p>
+            </div>
+            <form class="modal-form" id="consultationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="Jane">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="(619) 555-0199">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="interestTreatment">Primary Area of Interest</label>
+                    <select id="interestTreatment" name="interestTreatment">
+                        <option value="Hormone Therapy">Hormone Therapy (BHRT / TRT)</option>
+                        <option value="Medical Weight Loss">Medical Weight Loss & Metabolic Care</option>
+                        <option value="IV Therapy">IV Therapy & NAD+ Optimization</option>
+                        <option value="Gut Health">Gut Health & Microbiome Diagnostics</option>
+                        <option value="Regenerative & Longevity">Regenerative Medicine & Longevity</option>
+                        <option value="Naturopathic Medicine">Naturopathic & Integrative Medicine</option>
+                        <option value="Aesthetic Medicine">Aesthetic Medicine</option>
+                        <option value="General Consultation">15-Min General Consultation</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Tell us about your health goals or questions</label>
+                    <textarea id="notes" name="notes" rows="3"
+                        placeholder="Share what symptoms you are experiencing or what you hope to achieve..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    Confirm Consultation Request <i data-lucide="arrow-right" class="btn-icon"></i>
+                </button>
+                <p class="form-privacy-note">
+                    🔒 HIPAA-compliant & secure. Your personal health information is strictly confidential.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-notification" id="toastNotification">
+        <div class="toast-icon"><i data-lucide="check-circle-2"></i></div>
+        <div class="toast-body">
+            <h5 class="toast-title">Request Received</h5>
+            <p class="toast-msg">Our clinical coordinator will contact you shortly to confirm your time.</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
